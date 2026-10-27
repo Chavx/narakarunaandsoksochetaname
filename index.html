@@ -296,7 +296,7 @@
 
     <div class="card">
         <h2>បង្កើតលីងអញ្ជើញភ្ញៀវ</h2>
-        <h2 class="names">ណារ៉ា ករុណា & សុខ សុជាតា</h2>
+        <h2 class="names">ហ៊ុន គឹមឈាន់ & ធី ប៉ាត់ទីម៉ា</h2>
         
         <label for="guestName">ឈ្មោះភ្ញៀវ៖</label>
         <input type="text" id="guestName" placeholder="ឧ. លោក និង លោកស្រី សុខ សុភា">
@@ -312,12 +312,12 @@
                     <div class="qr-card-overline">WEDDING INVITATION</div>
                     <div class="qr-card-photo-frame">
                         <img id="qrCardPhoto" src="./narakarunaandsoksocheta.jpg" alt="រូបថតគូស្វាមីភរិយា" onerror="this.style.display='none'; document.getElementById('qrPhotoFallback').style.display='flex';">
-                        <div id="qrPhotoFallback" class="qr-photo-fallback">💍<br>ណារ៉ា ករុណា &amp; សុខ សុជាតា</div>
+                        <div id="qrPhotoFallback" class="qr-photo-fallback">💍<br>ហ៊ុន គឹមឈាន់ &amp; ធី ប៉ាត់ទីម៉ា</div>
                     </div>
                     <div class="qr-card-heading">សូមស្កេន QR Code</div>
-                    <div class="qr-card-description">ដើម្បីបើកកាតអញ្ជើញមង្គលការ<br>របស់ ណារ៉ា ករុណា &amp; សុខ សុជាតា</div>
+                    <div class="qr-card-description">ដើម្បីបើកកាតអញ្ជើញមង្គលការ<br>របស់ ហ៊ុន គឹមឈាន់ &amp; ធី ប៉ាត់ទីម៉ា</div>
                     <div id="qrcode" class="design-qr"></div>
-                    <div class="qr-card-names">ណារ៉ា ករុណា <span>&amp;</span> សុខ សុជាតា</div>
+                    <div class="qr-card-names">ហ៊ុន គឹមឈាន់ <span>&amp;</span> ធី ប៉ាត់ទីម៉ា</div>
                     <div class="qr-card-footer">សូមគោរពអញ្ជើញ និងរង់ចាំស្វាគមន៍ដោយក្តីរីករាយ</div>
                 </div>
             </div>
@@ -397,7 +397,7 @@
             }
 
             currentGuestName = name;
-            const baseUrl = "https://narakarunaandsoksocheta.pages.dev";
+            const baseUrl = "https://laobunthengandnhanhsivhorname.pages.dev";
             actualLinkToCopy = baseUrl + "?to=" + name;
             encodedQrLink = baseUrl + "?to=" + encodeURIComponent(name);
 
@@ -488,7 +488,7 @@
                 ctx.font = "bold 32px sans-serif";
                 ctx.fillText("♥", W / 2, py + 175);
                 ctx.font = "bold 24px sans-serif";
-                ctx.fillText("Nara Karuna & Sok Socheta", W / 2, py + 225);
+                ctx.fillText("Hun Kimchhean & Thy Pattima", W / 2, py + 225);
             }
 
             ctx.fillStyle = "#5f4b32";
@@ -497,7 +497,7 @@
             ctx.fillStyle = "#6e675c";
             ctx.font = "22px sans-serif";
             ctx.fillText("ដើម្បីបើកកាតអញ្ជើញមង្គលការ", W / 2, 642);
-            ctx.fillText("របស់ ណារ៉ា ករុណា & សុខ សុជាតា", W / 2, 676);
+            ctx.fillText("របស់ ហ៊ុន គឹមឈាន់ & ធី ប៉ាត់ទីម៉ា", W / 2, 676);
 
             const qrSize = 300, qx = (W - qrSize) / 2, qy = 710;
             ctx.fillStyle = "#ffffff";
@@ -516,7 +516,7 @@
             ctx.textAlign = "center";
             ctx.fillStyle = "#6b5330";
             ctx.font = "bold 27px sans-serif";
-            ctx.fillText("ណារ៉ា ករុណា  &  សុខ សុជាតា", W / 2, 1090);
+            ctx.fillText("ហ៊ុន គឹមឈាន់  &  ធី ប៉ាត់ទីម៉ា", W / 2, 1090);
             ctx.fillStyle = "#918473";
             ctx.font = "20px sans-serif";
             ctx.fillText("សូមគោរពអញ្ជើញ និងរង់ចាំស្វាគមន៍ដោយក្តីរីករាយ", W / 2, 1140);
@@ -542,7 +542,7 @@
         function copyFullMessage() {
             if (!actualLinkToCopy || !currentGuestName) return;
 
-            let fullText = `អាពាហ៍ពិពាហ៍ ណារ៉ា ករុណា & សុខ សុជាតា 💍\nសូមគោរពអញ្ជើញ ${currentGuestName} ចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីមង្គលការរបស់យើងខ្ញុំ ❤️\n\n🔗 សូមចុចទីនេះដើម្បីបើកកាតអញ្ជើញ៖\n${actualLinkToCopy}`;
+            let fullText = `អាពាហ៍ពិពាហ៍ ហ៊ុន គឹមឈាន់ & ធី ប៉ាត់ទីម៉ា 💍\nសូមគោរពអញ្ជើញ ${currentGuestName} ចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីមង្គលការរបស់យើងខ្ញុំ ❤️\n\n🔗 សូមចុចទីនេះដើម្បីបើកកាតអញ្ជើញ៖\n${actualLinkToCopy}`;
 
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(fullText).then(() => {
@@ -572,7 +572,7 @@
         function shareToTelegram() {
             if (!actualLinkToCopy || !currentGuestName) return;
 
-            let messageText = `អាពាហ៍ពិពាហ៍ ណារ៉ា ករុណា & សុខ សុជាតា 💍\nសូមគោរពអញ្ជើញ ${currentGuestName} ចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីមង្គលការរបស់យើងខ្ញុំ ❤️`;
+            let messageText = `អាពាហ៍ពិពាហ៍ ហ៊ុន គឹមឈាន់ & ធី ប៉ាត់ទីម៉ា 💍\nសូមគោរពអញ្ជើញ ${currentGuestName} ចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីមង្គលការរបស់យើងខ្ញុំ ❤️`;
             let telegramUrl = `https://t.me/share/url?url=${encodeURIComponent(actualLinkToCopy)}&text=${encodeURIComponent(messageText)}`;
             window.open(telegramUrl, '_blank', 'noopener,noreferrer');
         }
